@@ -30,7 +30,7 @@ public class DefaultChatgptService implements ChatgptService {
 
     public DefaultChatgptService(ChatgptProperties chatgptProperties) {
         this.chatgptProperties = chatgptProperties;
-        AUTHORIZATION = "slauth " + chatgptProperties.getApiKey();
+        AUTHORIZATION = chatgptProperties.getApiKey();
     }
 
     @Override
